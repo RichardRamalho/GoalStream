@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/src/style/login.css" />
+
+<div class="container">
+  <div id="login">
+    <h1>Entrar em campo!</h1>
+    <form id="myForm" action="submit">
+      <div class="input-wrapper">
+        <label for="user">Usuário</label>
+        <input type="text" id="user" placeholder="Usuário" required />
+      </div>
+
+      <div class="input-wrapper">
+        <label for="password">Senha</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Senha"
+          maxlength="8"
+          required
+        />
+      </div>
+
+      <button type="submit" id="btnLogin" onsubmit="route()">Login</button>
+      <div class="links-container">
+        <a href="#" class="left-link">Esqueceu a senha?</a>
+        <a href="#" class="right-link">Inscrever</a>
+      </div>
+    </form>
+  </div>
+</div>

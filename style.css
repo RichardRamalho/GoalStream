@@ -1,0 +1,156 @@
+/* ----- Fonts ----- */
+/* font-family: 'Prompt', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Global variables */
+:root {
+  font-size: 62.5%;
+  color: aliceblue;
+  font-family: "Prompt", sans-serif;
+}
+
+/* --- Global --- */
+.hide {
+  display: none;
+}
+
+body.home a:nth-child(1) {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+body {
+  height: 100vh;
+  background-image: url(/assets/johannes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.6rem;
+}
+
+nav {
+  background: linear-gradient(
+    45deg,
+    hsl(245, 100%, 9%) 50%,
+    hsl(342, 54%, 19%) 70%
+  );
+  padding: 1.5rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+nav img {
+  width: 6rem;
+  height: auto;
+}
+
+nav a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+nav a[href="/404"] {
+  display: none;
+}
+
+nav a:hover {
+  animation: scaleAnimation 0.3s ease 0.003s forwards;
+}
+
+/* --------- home ----------*/
+
+.home-page {
+  margin-top: 4rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  color: #e1e1e6;
+}
+
+.home-page h1 span {
+  background: linear-gradient(to right, hsl(224, 87%, 63%), hsl(180, 87%, 63%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  font-style: oblique;
+}
+
+.btn-home {
+  width: 30rem;
+  height: 6.4rem;
+  padding: 1.6rem;
+  cursor: pointer;
+  background: linear-gradient(to right, hsl(245, 100%, 9%) , hsl(342, 54%, 19%));
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  border: none;
+  transition: background 0.3s, color 0.3s;
+  margin-top: 15rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-home:hover {
+  background: linear-gradient(to right, hsl(224, 87%, 63%), hsl(180, 87%, 63%));
+  color: rgb(4, 4, 54);
+}
+
+/* --------- about ----------*/
+
+.about-page {
+  padding: 1.6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, hsl(246, 100%, 8%) , hsl(342, 63%, 12%));
+}
+
+.about-page h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 6rem;
+  background: linear-gradient(to right, hsl(224, 87%, 63%), hsl(180, 87%, 63%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  font-style: oblique;
+}
+
+.about-page p {
+  font-size: 2rem;
+  text-align: justify;
+  width: 60rem;
+  line-height: 3.2rem;
+  margin-top: 1.6rem;
+  opacity: 0.8;
+}
+
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}

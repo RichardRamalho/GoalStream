@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>GoalStream</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="shortcut icon"
+    href="./assets/icons8-soccer-64.png"
+    type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <img
+      id="player"
+        src="./assets/icons8-soccer-64.png"
+        alt="jogador de futebol"
+        />
+
+      <a href="/" onclick="route()">Home</a>
+      <a href="/about" onclick="route()">Sobre</a>
+      <a href="/login" onclick="route()">Login</a>
+      <a href="/404" onclick="route()">404:Error</a>
+    </nav>
+
+    <div id="app">
+    </div>
+    <script src="./src/JS/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ----- Fonts ----- */
+  font-size: 62.5%;
+  --font-family-first: "Prompt", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    hsl(218, 74%, 24%) 0%,
+    hsl(158, 85%, 28%) 50%,
+    hsl(49, 100%, 46%) 100%
+  );
+  animation: gradient 5s ease infinite;
+  background-size: 200% 200%;
+  font-family: var(--font-family-first);
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+.container-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 2rem;
+  }
+  
+  .red-card {
+    text-align: center; 
+  }
+  
+  h1 {
+    color: #ffd700;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  p {
+    color: whitesmoke;
+    font-size: 2.4rem;
+  }
+  
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
