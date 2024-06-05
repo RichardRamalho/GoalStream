@@ -1,10 +1,10 @@
 import { Router } from './router.js';
 
 const router = new Router()
-router.add('/', '../pages/home.html');
-router.add('/about', '../pages/about.html');
-router.add('/login', '../pages/login.html');
-router.add(404, '../pages/404.html');
+router.add('/', '/src/pages/home.html');
+router.add('/about', '/src/pages/about.html');
+router.add('/login', '/src/pages/login.html');
+router.add(404, '/src/pages/404.html');
 
 router.handle();
 

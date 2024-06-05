@@ -120,7 +120,7 @@ nav a:hover {
 .about-page {
   padding: 1.6rem 4rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   background: linear-gradient(to right, hsl(246, 100%, 8%) , hsl(342, 63%, 12%));
 }
 
@@ -143,6 +143,20 @@ nav a:hover {
   line-height: 3.2rem;
   margin-top: 1.6rem;
   opacity: 0.8;
+}
+
+#leagues {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+#leagues img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 100px;
 }
 
 
